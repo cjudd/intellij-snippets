@@ -1,6 +1,6 @@
 package com.getting2knowij.suggest;
 
-public record User() {
+class User {
   public boolean onVacation() {
     return false;
   }
