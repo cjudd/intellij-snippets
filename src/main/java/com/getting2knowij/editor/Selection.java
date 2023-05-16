@@ -9,8 +9,8 @@ public class Selection {
 
   private static String printableDetails(Customer customer) {
     return "{" +
-        "id=" + customer.id() +
-        ", name='" + customer.name() + '\'' +
+        "id=" + customer.getId() +
+        ", name='" + customer.getName() + '\'' +
         "}";
   }
 }

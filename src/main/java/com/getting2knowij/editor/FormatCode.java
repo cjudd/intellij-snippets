@@ -3,6 +3,7 @@ package com.getting2knowij.editor;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 @SuppressWarnings("unused")
@@ -18,7 +19,7 @@ public class FormatCode {
   }
 
   void methodToChangeFormat() throws IOException {
-    Path path = Path.of("music.csv");
+    Path path = Paths.get("music.csv");
 
     try (Stream<String> lines = Files.lines(path)) {
       lines.map(s -> s.split(","))

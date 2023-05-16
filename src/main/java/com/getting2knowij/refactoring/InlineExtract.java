@@ -1,6 +1,8 @@
 package com.getting2knowij.refactoring;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class InlineExtract {
   public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class InlineExtract {
   }
 
   private void createListAndDoStuffWithIt() {
-    List<String> strings = List.of("This", "is", "a", "list", "of", "Strings");
+    List<String> strings = Arrays.asList("This", "is", "a", "list", "of", "Strings");
     int numberOfStrings = strings.size();
 
     // Try extracting this for loop as a method with (⌥⌘M | Ctrl+Alt+M)
@@ -31,6 +33,6 @@ public class InlineExtract {
   private List<String> createNewListOfLowerCase(List<String> strings) {
     return strings.stream()
                   .map(String::toLowerCase)
-                  .toList();
+            .collect(Collectors.toList());
   }
 }

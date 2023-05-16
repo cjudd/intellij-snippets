@@ -1,6 +1,7 @@
 package com.getting2knowij.editor;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -27,12 +28,12 @@ public class ReadingCode {
   }
 
   void inlayHintsShownForImplicitTypes() {
-    var customers = List.of(new Customer(123, "Ms Customer"));
+    List<Customer> customers = Arrays.asList(new Customer(123, "Ms Customer"));
   }
 
   void popupDocumentation() {
     // press (F1 | Ctrl+Q) on a class or method for quick documentation
-    var customers = new ArrayList<String>();
+    List<String> customers = new ArrayList<String>();
   }
 
   //<editor-fold desc="Helper methods">

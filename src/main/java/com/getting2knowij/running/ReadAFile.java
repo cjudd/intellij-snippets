@@ -3,6 +3,7 @@ package com.getting2knowij.running;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 /**
@@ -29,7 +30,7 @@ import java.util.stream.Stream;
  */
 public class ReadAFile {
   public static void main(String[] args) throws IOException {
-    Path path = Path.of("music.csv");
+    Path path = Paths.get("music.csv");
     System.out.println("File path: " + path.toAbsolutePath());
 
     try (Stream<String> lines = Files.lines(path)) {
