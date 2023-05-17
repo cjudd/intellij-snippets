@@ -37,7 +37,7 @@ class CarTest {
 
         // then
         Coords newPosition = car.getPosition();
-        assertEquals(oldPosition.latitude() + 1, newPosition.latitude());
-        assertEquals(oldPosition.longitude() + 2, newPosition.longitude());
+        assertEquals(oldPosition.getLatitude() + 1, newPosition.getLatitude());
+        assertEquals(oldPosition.getLongitude() + 2, newPosition.getLongitude());
     }
 }

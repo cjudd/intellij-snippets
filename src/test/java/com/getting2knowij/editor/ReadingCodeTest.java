@@ -11,7 +11,7 @@ class ReadingCodeTest {
     readingCode.inlayHintsForChainedMethods();
     readingCode.inlayHintsShownForImplicitTypes();
     readingCode.inlayHintsShownForImplicitTypes();
-    var customer = readingCode.inlayHintsShownForParameterNames("name 1");
+    Customer customer = readingCode.inlayHintsShownForParameterNames("name 1");
     customer = readingCode.inlayHintsShownForParameterNames("name 2");
   }
 }
