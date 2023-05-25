@@ -7,5 +7,6 @@ public class TodoNotes {
     System.out.println(message);
 
     // Task: complete this method
+    // Task: more to do later
   }
 }

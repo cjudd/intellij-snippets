@@ -17,18 +17,18 @@ import java.util.stream.Stream;
 public class ReadingCode {
   Customer inlayHintsShownForParameterNames(String name) {
     // shows Parameter Name Hints, if enabled
-    return findCustomer(name, null, null, 0, true);
+    return findCustomer(name, "25 Main St.", 1234, 1234, true);
   }
 
   void inlayHintsForChainedMethods() {
-    Stream.of(1, 2, 3)
+    Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
         .filter(it -> it % 2 == 0)
         .map(it -> "item: " + it)
         .forEach(System.out::println);
   }
 
   void inlayHintsShownForImplicitTypes() {
-    List<Customer> customers = Arrays.asList(new Customer(123, "Ms Customer"));
+    List<Customer> customers = Arrays.asList(new Customer(123, "Chris Judd"));
   }
 
   void popupDocumentation() {
@@ -38,7 +38,7 @@ public class ReadingCode {
 
   //<editor-fold desc="Helper methods">
   private Customer findCustomer(String name, String address, Integer orderNumber, int id, boolean ascending) {
-    return null;
+    return new Customer(id, name);
   }
 
   private void anotherMethodJustToBeFoldedAwayInEditorFold() {

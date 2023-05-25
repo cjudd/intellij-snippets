@@ -1,7 +1,8 @@
 package com.getting2knowij.editor;
 
 public class LongStrings {
-  private final String aLongString = "Try out some of the editor tips on " +
+  private final String aLongString = "Try out some of " +
+          "the editor tips on " +
       "this long string, for example, " +
       "pressing Enter in the middle of a line, " +
       "using (⌃⇧J | Ctrl+Shift+J) on " +
